@@ -6,6 +6,9 @@ jobs:
     name: A job to say hello_world
     steps:
       - name: Checkout
+        uses: actions/checkout@v1
+      - uses: ./
+      - name: hello world actio step
         id: hello
         uses: actions/hello-world-docker-action@v1
         with:
